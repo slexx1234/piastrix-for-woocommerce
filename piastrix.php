@@ -2,9 +2,11 @@
 /*
   Plugin Name: Piastrix
   Description: Piastrix Plugin for WooCommerce
+  Plugin URI: https://github.com/slexx1234/piastrix-for-woocommerce
   Version: 1.0.0
   Author: slexx1234
   Author URI: https://slexx1234.netlify.com
+  License: GPLv2
  */
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -118,7 +120,7 @@ function woocommerce_piastrix() {
             }
 
             return $form .
-                '<input type="submit" class="button alt" id="submit_piastrix_form" value="'.__('Pay', 'piastrix').'" />' .
+                '<input type="submit" class="button alt" id="submit_piastrix_form" value="'.__('Pay', 'piastrix').'" /> ' .
                 '<a class="button cancel" href="'.$order->get_cancel_order_url().'">'.__('Cancel payment and return back to card', 'piastrix').'</a>' .
                 '</form>';
         }
