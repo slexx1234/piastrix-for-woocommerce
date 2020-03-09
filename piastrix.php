@@ -38,8 +38,9 @@ function woocommerce_piastrix() {
             // Define user set variables
             $this->shop_id = $this->get_option('shop_id');
             $this->secret_key = $this->get_option('secret_key');
-            $this->title = 'piastrix';
+            $this->title = 'Piastrix';
             $this->description = __('Payment system Piastrix', 'piastrix');
+            $this->method_description = __('Payment system Piastrix', 'piastrix');
 
             // Actions
             add_action('woocommerce_receipt_' . $this->id, array($this, 'receipt_page'));
